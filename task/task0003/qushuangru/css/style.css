@@ -1,0 +1,364 @@
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+font,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+    background: transparent;
+    font-weight: normal;
+}
+
+body {
+    line-height: 1;
+}
+
+ol,
+ul {
+    list-style: none;
+}
+
+blockquote,
+q {
+    quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+    content: '';
+    content: none;
+}
+
+a {
+    color: #000;
+    text-decoration: none;
+}
+/* remember to define focus styles! */
+
+:focus {
+    outline: 0;
+}
+/* remember to highlight inserts somehow! */
+
+ins {
+    text-decoration: none;
+}
+
+del {
+    text-decoration: line-through;
+}
+/* tables still need 'cellspacing="0"' in the markup */
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+body {
+    font-family: '宋体';
+    position: absolute;
+    height: 100%;
+    width: 100%;
+}
+/*cssreset*/
+
+header {
+    position: absolute;
+    height: 60px;
+    width: 100%;
+    background: #ddd;
+    border-bottom: 1px solid #ccc;
+    min-width: 800px;
+}
+
+header h1 {
+    color: #999;
+    line-height: 60px;
+    padding-left: 15px;
+}
+
+.container {
+    height: 100%;
+    box-sizing: border-box;
+    padding-top: 61px;
+    min-width: 800px;
+    min-height: 500px;
+}
+
+aside {
+    position: relative;
+    width: 230px;
+    height: 100%;
+    float: left;
+    border-right: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+.menu-prt {
+    background: #f2f2f2;
+    padding-top: 15px;
+}
+
+.menu-prt h3 {
+    font-weight: normal;
+    padding-left: 13px;
+    font-size: 14px;
+    line-height: 36px;
+}
+
+.menu-prt small {
+    padding-left: 6px;
+}
+
+.menu-prt h4 {
+    line-height: 30px;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.menu-prt ul {
+    line-height: 26px;
+    font-size: 14px;
+    cursor: pointer;
+}
+/*其实应该是用js控制缩进~偷懒*/
+
+.menu-prt li {
+    text-indent: 2em;
+}
+
+.menu-prt li li {
+    text-indent: 4em;
+}
+
+.menu-prt li li li {
+    text-indent: 6em;
+}
+
+.menu-prt li li li li {
+    text-indent: 8em;
+}
+
+.menu-prt .list ul {
+    display: none;
+}
+
+.menu-prt .list.active>ul {
+    display: block;
+}
+
+.menu-prt .list.current>h4 {
+    background: #fff;
+}
+
+.menu-prt .item.current {
+    background: #fff;
+}
+
+.menu-prt h4:before {
+    content: "+ ";
+    margin-left: -13px;
+}
+
+.menu-prt .active>h4:before {
+    content: "- ";
+    margin-left: -13px;
+}
+
+.menu-prt .delete {
+    text-indent: 0;
+    float: right;
+    margin-right: 20px;
+    display: none;
+}
+
+.menu-prt h4:hover >.delete {
+    display: block;
+}
+
+.addnew {
+    position: absolute;
+    bottom: 0;
+    height: 40px;
+    width: 100%;
+    border-top: 1px solid #ccc;
+    background: #eee;
+}
+
+.addnew a {
+    line-height: 40px;
+    padding-left: 45px;
+    font-size: 12px;
+}
+
+.menu-chd {}
+
+.menu-chd nav {
+    height: 40px;
+    border-bottom: 1px solid #ccc;
+    background: #eee;
+    font-size: 12px;
+    padding-left: 7px;
+}
+
+.menu-chd nav li {
+    float: left;
+}
+
+.menu-chd nav a {
+    padding: 4px 10px;
+    line-height: 40px;
+    margin-left: 3px;
+}
+
+.menu-chd nav .active a {
+    background: #fff;
+    border: 1px solid #ccc;
+}
+
+.menu-chd dl {
+    font-size: 14px;
+    line-height: 27px;
+    border-top: 1px solid #fff;
+}
+
+.menu-chd dd {
+    padding-left: 34px;
+    cursor: pointer;
+}
+
+.menu-chd dt {
+    background: #fafaee;
+    padding-left: 20px;
+}
+
+.menu-chd dl .active {
+    background: #f2f2f2;
+}
+
+.menu-chd dl .finished {
+    color: #238c00;
+    font-weight: bold;
+}
+
+.content {
+    box-sizing: border-box;
+    margin-left: 460px;
+    height: 100%;
+}
+
+.content nav {
+    height: 50px;
+    background: #f2f2f2;
+    border-bottom: 1px solid #ccc;
+    line-height: 50px;
+}
+
+.content nav h2 {
+    font-weight: bold;
+    margin-left: 16px;
+    font-size: 16px;
+}
+
+.content nav ul {
+    float: right;
+}
+
+.content nav li {
+    float: left;
+}
+
+.content .task-date {
+    height: 50px;
+    background: #fafaee;
+    border-bottom: 1px solid #ccc;
+    font-size: 14px;
+    line-height: 50px;
+    padding-left: 17px;
+}
+
+.content section {
+    font-size: 14px;
+    height: 100%;
+    margin-top: -102px;
+    padding-top: 102px;
+    box-sizing: border-box;
+}
+
+.content .text-area{
+	padding: 10px;
+	height: 100%;
+	box-sizing: border-box;
+}
+
+.content .editing.text-area {
+    box-shadow: 0 0 6px #ccc inset;
+}
+
+.content section p {
+    text-indent: 2em;
+    line-height: 1.5em;
+}

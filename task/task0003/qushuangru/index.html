@@ -1,0 +1,97 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>task0003</title>
+	<link rel="stylesheet" href="css/style.css">
+
+</head>
+<body>
+	<header>
+		<h1>GTD Tools</h1>
+	</header>
+	<div class="container">
+		<aside class="menu-prt">
+			<h3><strong>所有任务</strong>(<span>11</span>)</h3>
+			<h3>分类列表</h3>
+			<ul id="mission-list">
+				<!-- <li>
+					<h4><strong>百度IFE项目</strong>(<span>11</span>)<a class="delete" href="#">&times;</a></h4>
+					<ul>
+						<li class="active"><strong>task1</strong>(<span>6</span>)</li>
+						<li><strong>task2</strong>(<span>4</span>)</li>
+						<li>
+							<h4><strong>百度IFE项目</strong>(<span>11</span>)<a class="delete" href="#">&times;</a></h4>
+							<ul>
+								<li><strong>task1</strong>(<span>6</span>)</li>
+								<li><strong>task2</strong>(<span>4</span>)</li>
+							</ul>
+						</li>
+					</ul>
+				</li>
+				<li>
+					<h4><strong>毕业设计</strong>(<span>0</span>)<a class="delete" href="#">&times;</a></h4>
+					<ul></ul>
+				</li>
+				<li>
+					<h4><strong>社团活动</strong>(<span>0</span>)<a class="delete" href="#">&times;</a></h4>
+				</li>
+				<li>
+					<h4><strong>家庭生活</strong>(<span>0</span>)<a class="delete" href="#">&times;</a></h4>
+				</li>
+				<li>
+					<h4><strong>默认分类</strong>(<span>0</span>)<a class="delete" href="#">&times;</a></h4>
+				</li> -->
+			</ul>
+			<div class="addnew">
+				<a id="newlist" href="#">+ 新增分类</a>
+			</div>
+		</aside>
+		<aside class="menu-chd">
+			<nav id="mission-tab">
+				<ul>
+					<li id="all" class="active"><a href="#">所有</a></li>
+					<li id="doing"><a href="#">未完成</a></li>
+					<li id="done"><a href="#">已完成</a></li>
+				</ul>
+			</nav>
+			<dl id="todo-list">
+				<!-- <dt>2015-04-28</dt>
+				<dd class="finished">to-do 1</dd>
+				<dd>to-do 2</dd>
+				<dt>2015-04-29</dt>
+				<dd>to-do 3</dd>
+				<dd>to-do 4</dd>
+				<dt>2015-04-30</dt>
+				<dd>to-do 5</dd>
+				<dd>to-do 6</dd>
+				<dt>2015-05-04</dt>
+				<dd class="active">to-do 7</dd>
+				<dd>to-do 8</dd> -->
+			</dl>
+			<div class="addnew">
+				<a id="newmission" href="#">+ 新增任务</a>
+			</div>
+		</aside>
+		<div id="mission" class="content">
+			<nav>
+				<ul>
+					<li><a id="finished" href="#">完成</a></li>
+					<li><a id="edit" href="#">编辑</a></li>
+				</ul>
+				<h2></h2>				
+			</nav>
+			<div class="task-date">
+				任务日期：<span class="mission-date"></span>
+			</div>
+			<section>
+				<div class="text-area">
+					
+				</div>				
+			</section>
+		</div>
+	</div>
+	<script src="js/jquery-1.11.3.min.js"></script>
+	<script src="js/common.js"></script>
+</body>
+</html>
